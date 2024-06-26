@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="https://kit.fontawesome.com/d9379311a0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#"><img src="{% static 'icons/home.png' %}" alt="Home"></a></li>
+                <li class="nav-item"><a href="https://x.com/YashKarale20" target="_blank"><img src="{% static 'icons/twitter.png' %}" alt="Twitter"></a></li>
+                <li class="nav-item"><a href="https://github.com/yashkarale06" target="_blank"><img src="{% static 'icons/github.png' %}" alt="GitHub"></a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/yash-karale-44527722a/" target="_blank"><img src="{% static 'icons/linkedin.png' %}" alt="LinkedIn"></a></li>
+                <li class="nav-item">
+                    <button id="mode-toggle" data-sun="{% static 'icons/sun.png' %}" data-moon="{% static 'icons/moon.png' %}">
+                        <img src="{% static 'icons/sun.png' %}" alt="Toggle Mode">
+                    </button>
+                </li>
+            </ul>
+            <a href="mailto:karaleyash27@gmail.com" class="contact-btn"><img src="{% static 'icons/mail.png' %}" alt="Contact"> Get in touch </a>
+        </nav>
+    </header>
+    <div class="background-container">
+        <div class="middle-section">
+            <img src="{% static 'icons/miles.png' %}" alt="Your Photo">
+            <div class="profile-name">
+                Data Analyst 
+            </div>
+        </div>
+        <div class="information-lines">
+            <p class="line1">I Learn New Skills Everyday</p>
+            <p class="line2">Hey. My Name Is Yash Karale</p>
+            <p class="line3">I'm Passionate To Explore Data</p>
+        </div>
+        <div class="scroll-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="{% static 'resume/Resume.pdf' %}" download="YashKarale_Resume.pdf">Resume</a>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-box">
+                <img src="{% static 'icons/img.png' %}" alt="Profile Picture" class="profile-picture">
+            </div>
+            <div class="about-info">
+                <h2>About</h2>
+                <p>Hey there! My name is <span class="highlight-name">Yash Karale.</span></p>
+                <p>I am a <span class="highlight">data analyst</span> with a passion for uncovering insights from data and transforming them into actionable strategies. I thrive on using data to solve complex problems and drive business decisions.</p>
+                <p>Self-driven and detail-oriented, I enjoy diving into datasets, identifying patterns, and making data-driven recommendations. My curious mind and analytical skills help me tackle challenging real-world problems with precision and creativity.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <ul class="skills-list">
+                <li><img src="{% static 'icons/python.png' %}" alt="Python"><span>Python</span></li>
+                <li><img src="{% static 'icons/mysql.png' %}" alt="My_SQL"><span>My_SQL</span></li>
+                <li><img src="{% static 'icons/machine-learning.png' %}" alt="Machine Learning"><span>Machine Learning</span></li>
+                <li><img src="{% static 'icons/r.png' %}" alt="R Studio"><span>R Studio</span></li>
+                <li><img src="{% static 'icons/web-analytics.png' %}" alt="Data Visualization"><span>Data Visualization</span></li>
+                <li><img src="{% static 'icons/js.png' %}" alt="JavaScript"><span>JavaScript</span></li>
+                <li><img src="{% static 'icons/power_bi.png' %}" alt="Power Bi"><span>Power Bi</span></li>
+                <li><img src="{% static 'icons/hadoop.png' %}" alt="Hadoop"><span>Hadoop</span></li>
+                <!-- Duplicate items -->
+                <li><img src="{% static 'icons/python.png' %}" alt="Python"><span>Python</span></li>
+                <li><img src="{% static 'icons/mysql.png' %}" alt="My_SQL"><span>My_SQL</span></li>
+                <li><img src="{% static 'icons/machine-learning.png' %}" alt="Machine Learning"><span>Machine Learning</span></li>
+                <li><img src="{% static 'icons/r.png' %}" alt="R Studio"><span>R Studio</span></li>
+                <li><img src="{% static 'icons/web-analytics.png' %}" alt="Data Visualization"><span>Data Visualization</span></li>
+                <li><img src="{% static 'icons/js.png' %}" alt="JavaScript"><span>JavaScript</span></li>
+                <li><img src="{% static 'icons/power_bi.png' %}" alt="Power Bi"><span>Power Bi</span></li>
+                <li><img src="{% static 'icons/hadoop.png' %}" alt="Hadoop"><span>Hadoop</span></li>
+            </ul>
+            <ul class="skills-list">
+                <li><img src="{% static 'icons/Html.png' %}" alt="Html"><span>Html</span></li>
+                <li><img src="{% static 'icons/css.png' %}" alt="Css"><span>Css</span></li>
+                <li><img src="{% static 'icons/flask.png' %}" alt="Flask"><span>Flask</span></li>
+                <li><img src="{% static 'icons/numpy.png' %}" alt="numpy"><span>numpy</span></li>
+                <li><img src="{% static 'icons/github.png' %}" alt="Github"><span>Github</span></li>
+                <li><img src="{% static 'icons/pandas.png' %}" alt="Pandas"><span>Pandas</span></li>
+                <li><img src="{% static 'icons/spark.png' %}" alt="Spark"><span>Spark</span></li>
+                <!-- Duplicate items -->
+                <li><img src="{% static 'icons/Html.png' %}" alt="Html"><span>Html</span></li>
+                <li><img src="{% static 'icons/css.png' %}" alt="Css"><span>Css</span></li>
+                <li><img src="{% static 'icons/flask.png' %}" alt="Flask"><span>Flask</span></li>
+                <li><img src="{% static 'icons/numpy.png' %}" alt="numpy"><span>numpy</span></li>
+                <li><img src="{% static 'icons/github.png' %}" alt="Github"><span>Github</span></li>
+                <li><img src="{% static 'icons/pandas.png' %}" alt="Pandas"><span>Pandas</span></li>
+                <li><img src="{% static 'icons/spark.png' %}" alt="Spark"><span>Spark</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="navigation-buttons left">
+                <button class="prev-button">&lt;</button>
+            </div>
+            
+            <div class="project-box" id="project-container">
+                <div class="project" id="project-4" style="display: none;">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/project-4.png' %}" alt="Project 4 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title"> Stock prediction Arima Model</h3>
+                        <p class="project-description">
+                            I made a stock prediction model using python In which I learned how to predict the future
+                            trends using some knows libraries like Scikit-learns, Pandas, NumPy etc. In this model the model
+                            predicts the future stock price based on the previous data.
+                        </p>
+                        <a href="https://github.com/yashkarale06/Stock-Prediction" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project" id="project-2" style="display: none;">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/project-2.png' %}" alt="Project 2 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Instagram Reach Analysis</h3>
+                        <p class="project-description">
+                            Analyzed Instagram reach through Insights, focusing on metrics like total and discovery reach. 
+                            Conducted post-performance comparison, tracked story and ad reach, and adapted strategies for 
+                            effective engagement based on continuous monitoring.
+                        </p>
+                        <a href="https://github.com/yashkarale06/Instagram-Reach-Analysis" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project" id="project-3" style="display: none;">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/project-3.png' %}" alt="Project 3 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title"> Amazon Review sentiment</h3>
+                        <p class="project-description">
+                        Executed sentiment analysis on Amazon reviews using a Jupyter Notebook, which included tasks such as data loading, exploration, preprocessing, 
+                        building a sentiment analysis model, evaluation, visualization for summarizing key findings and insights, and interpretation of model performance metrics                            
+                        </p>
+                        <a href="https://github.com/yashkarale06/Amazon-Reviews-Sentiment-Analysis.ipynb" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project" id="project-1">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/ser.png' %}" alt="Project 1 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Speech Emotion Recognizer</h3>
+                        <p class="project-description">
+                            Developed a Speech Emotion Recognizer application using Flask, HTML, CSS, and Python, 
+                            integrating XAMPP database. Implemented machine learning algorithms to analyze audio 
+                            recordings for emotional content classification. Enabled real-time audio recording and 
+                            visualization of waveform length.
+                        </p>
+                        <a href="https://github.com/yashkarale06/Speech_Emotion_Recognizer" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project" id="project-5" style="display: none;">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/project-5.png' %}" alt="Project 5 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title"> Personal Portfolio Website</h3>
+                        <p class="project-description">
+                            Designed and developed a personal portfolio website using HTML, CSS, and JavaScript. 
+                            Showcased projects, skills, and contact information. Implemented responsive design to ensure 
+                            compatibility across various devices and screen sizes.
+                        </p>
+                        <a href="https://github.com/YashKarale/SpeechEmotionRecognizer" target="_blank" class="project-link">View Project</a>
+
+                    </div>
+                </div>
+                <div class="project" id="project-6" style="display: none;">
+                    <div class="project-photo">
+                        <img src="{% static 'icons/project-6.png' %}" alt="Project 6 Photo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title"> Realtime Dashboard</h3>
+                        <p class="project-description">
+                            Created a real-time Power BI dashboard with seamless integration to PubNub, enabling dynamic
+                            data visualizations and insights. The project showcased expertise in real-time data ingestion,
+                            customizable widgets, user-friendly design, and robust security. Empowered organizations to
+                            monitor, analyze, and respond to real-time data events effectively.
+
+                        </p>
+                        <a href="https://github.com/yashkarale06/RealTime-Dashboard" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="navigation-buttons right">
+                <button class="next-button">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'js/script.js' %}?v=2"></script>
+</body>
+</html>
